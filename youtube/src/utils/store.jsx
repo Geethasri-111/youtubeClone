@@ -1,5 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import toggleslice from "./toggleSlice";
+import toggleslice, { closeMenu } from "./toggleSlice";
 const store = configureStore({
     reducer: {
         toggle : toggleslice,

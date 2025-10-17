@@ -17,10 +17,10 @@ const Head = () => {
     <div  className="grid grid-flow-col p-5 my-2 shadow-lg text-center">
     <div className='flex col-span-1 cursor-pointer'>
       <img className='h-8' src={hamburgerIcon} alt='Menu' onClick={()=>toggleHamburger()}/>
-      <a href='#'>
-        <img className='h-20 -mt-6 mx-2' src={youtubeLogo} alt="logo"/>
-      </a>
       
+        <img className='h-20 -mt-6 mx-2' src={youtubeLogo} alt="logo"/>
+    
+
     </div>
     <div className='flex col-span-10'>
       <input type="text" id="youtubeSearchbar"
