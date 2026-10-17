@@ -6,7 +6,7 @@ import store from './utils/store'
 import { Provider } from 'react-redux'
 import { BrowserRouter, Routes,Route } from 'react-router'
 import MainBox from './components/MainBox'
-import WatchPage from './components/watchPage'
+import WatchPage from './components/WatchPage'
 
 function App() {
 

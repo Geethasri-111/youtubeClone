@@ -7,6 +7,7 @@ import { useDispatch ,useSelector } from 'react-redux'
 import { toggle } from '../utils/toggleSlice'
 import { youtube_Search_API } from '../utils/consts'
 import { cacheResults } from '../utils/searchSlice'
+import { Link } from 'react-router'
 
 const Head = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -46,7 +47,9 @@ const Head = () => {
     <div  className="grid grid-flow-col p-5 my-2 shadow-lg text-center">
     <div className='flex col-span-1 cursor-pointer'>
       <img className='h-8' src={hamburgerIcon} alt='Menu' onClick={()=>toggleHamburger()}/>      
-        <img className='h-20 -mt-6 mx-2' src={youtubeLogo} alt="logo"/>
+     
+         <img className='h-20 -mt-6 mx-2' src={youtubeLogo} alt="logo"/>
+      
     </div>
     <div className='flex col-span-10 relative'>
       <div className='flex w-10/12'>

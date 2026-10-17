@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 import { useDispatch } from 'react-redux'
 import { closeMenu, toggle } from '../utils/toggleSlice';
 import { useSearchParams } from 'react-router';
+import CommentsContainer from './CommentsContainer';
 
 const WatchPage = () => {
     const [searchparams]= useSearchParams();
@@ -10,7 +11,8 @@ const WatchPage = () => {
         dispatch(closeMenu());
     },[])
   return (
-    <div>
+    <div className='row '>
+    <div className='flex'>
         <iframe width="1260" height="500"
          src={"https://www.youtube.com/embed/" + searchparams.get("v") + "?si=qaQMhKLExdyX-n1a"} title="YouTube video player"
           frameBorder="0" 
@@ -18,6 +20,8 @@ const WatchPage = () => {
          referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
 
       
+    </div>
+    <CommentsContainer/>
     </div>
   )
 }
